@@ -1,0 +1,313 @@
+/*******************************************************************************
+*********************************************************************** "ÍNDICE"
+* # CSS Colors
+* # CSS Backgrounds
+* # CSS Borders
+* # CSS Margins
+* # CSS Padding
+* # CSS Height and Width
+* # CSS Box Model
+* # CSS Outline
+* # CSS Text
+* # CSS Fonts
+* # CSS Icons
+* # CSS Links
+* # CSS Lists
+* # CSS Tables
+* # CSS Layout - The display Property
+* # CSS Layout - width and max-width
+* # CSS Layout - The position Property
+* # CSS Layout - Overflow
+* # CSS Layout - float and clear
+* # CSS Layout - inline-block
+* # CSS Layout - Horizontal & Vertical Align
+* # CSS Combinators
+* # CSS Pseudo-classes
+* # CSS Pseudo-elements
+* # CSS Opacity / Transparency
+* # CSS Attribute Selectors
+* # CSS Forms
+* # CSS Counters
+*******************************************************************************/
+
+/* # CSS Colors
+*******************************************************************************/
+nav {
+  color: white;
+}
+nav a {
+  color: white;
+}
+
+/* # CSS Backgrounds
+*******************************************************************************/
+body {
+  background-color: lightGrey;
+}
+
+nav,
+footer {
+  background-color: hsl(0, 100%, 0%);
+}
+
+/* # CSS Borders
+*******************************************************************************/
+nav a {
+  border: 1px dotted lightGrey;
+}
+
+/* # CSS Margins
+*******************************************************************************/
+body {
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+}
+footer p.text {
+  margin-top: 7px;
+}
+
+/* # CSS Padding
+*******************************************************************************/
+body {
+  padding-bottom: 64px;
+}
+
+header {
+  padding: 42px;
+}
+
+nav {
+  padding: 12px 0 12px 0; /* top, right, bottom, left */
+}
+
+nav a {
+  padding: 5px;
+}
+
+article {
+  padding: 22px;
+}
+
+footer {
+  padding: 12px;
+}
+footer p.social {
+  padding-right: 30px;
+}
+
+/* # CSS Height and Width
+*******************************************************************************/
+body {
+  height: 100%;
+}
+
+/* # CSS Box Model
+*******************************************************************************/
+/* width / border / padding / margin */
+
+/* # CSS Outline
+*******************************************************************************/
+iframe {
+  outline-style: dotted;
+}
+
+/* # CSS Text
+*******************************************************************************/
+body {
+  color: #434343;
+}
+
+header,
+nav {
+  text-align: center;
+}
+
+/* # CSS Fonts
+*******************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  font-weight: bold;
+}
+
+/* # CSS Icons
+*******************************************************************************/
+/* MIRAR EL index.html */
+
+/* # CSS Links
+*******************************************************************************/
+a {
+  text-decoration: none;
+}
+
+/* # CSS Lists
+*******************************************************************************/
+/* En el header */
+header ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header ul li.left {
+  text-align: left;
+}
+header ul li.center {
+  /* Per defecte */
+}
+header ul li.right {
+  text-align: right;
+}
+
+/* # CSS Tables
+*******************************************************************************/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* # CSS Layout - The display Property
+*******************************************************************************/
+main {
+  display: block;
+}
+
+/* # CSS Layout - width and max-width
+*******************************************************************************/
+footer {
+  width: 100%;
+}
+
+/* # CSS Layout - The position Property
+*******************************************************************************/
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* # CSS Layout - Overflow
+*******************************************************************************/
+nav {
+  overflow: hidden;
+}
+
+/* # CSS Layout - float and clear
+*******************************************************************************/
+footer .social {
+  float: right;
+}
+footer .text {
+  float: left;
+}
+
+/* # CSS Layout - inline-block
+*******************************************************************************/
+.partner {
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+  border: 2px solid #434343;
+  padding: 12px;
+  text-align: center;
+}
+
+
+/* # CSS Layout - Horizontal & Vertical Align
+*******************************************************************************/
+main {
+  margin: auto;
+  margin: auto;
+  width: 50%;
+}
+
+/* # CSS Combinators
+*******************************************************************************/
+/* qualsevol etiqueta de tipus div p o div .algo etc. */
+footer p {
+  color: #9a9a9a;
+}
+
+/* # CSS Pseudo-classes
+*******************************************************************************/
+footer p.social i.fa-snapchat:hover {
+  color: yellow;
+}
+footer p.social i.fa-spotify:hover {
+  color: green;
+}
+footer p.social i.fa-telegram:hover {
+  color: DodgerBlue;
+}
+
+/* # CSS Pseudo-elements
+*******************************************************************************/
+p#info-partner::first-letter {
+  font-size: xx-large;
+}
+
+/* # CSS Opacity / Transparency
+*******************************************************************************/
+nav a.active {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+nav a:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/* # CSS Attribute Selectors
+*******************************************************************************/
+[class|=active] {
+    font-size: small;
+}
+
+/* # CSS Forms
+*******************************************************************************/
+form label {
+  font-size: small;
+}
+
+form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+form input[type=button], input[type=submit], input[type=reset] {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
